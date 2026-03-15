@@ -17,7 +17,7 @@
   <text x="130" y="172" fill="#e6edf3" font-size="22" font-family="Arial, Helvetica, sans-serif">Input Layer</text>
 
   <rect x="130" y="188" width="240" height="32" rx="10" fill="#1f6feb"/>
-  <text x="250" y="209" fill="#ffffff" font-size="15" text-anchor="middle" font-family="Arial, Helvetica, sans-serif">8–12 Cameras / RTSP Streams</text>
+  <text x="250" y="209" fill="#ffffff" font-size="15" text-anchor="middle" font-family="Arial, Helvetica, sans-serif">Camera Streams (8–12 RTSP)</text>
 
   <rect x="410" y="188" width="180" height="32" rx="10" fill="#1f6feb"/>
   <text x="500" y="209" fill="#ffffff" font-size="15" text-anchor="middle" font-family="Arial, Helvetica, sans-serif">Sensor Inputs</text>
