@@ -1,42 +1,152 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="800">
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="980" viewBox="0 0 1600 980">
+  <rect width="1600" height="980" fill="#0b0f14"/>
 
-<rect x="0" y="0" width="1400" height="800" fill="#0b0f14"/>
+  <!-- Title -->
+  <text x="800" y="48" fill="#e6edf3" font-size="34" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+    Kazakh Translation Agent — Sovereign Edge AI Platform Architecture
+  </text>
+  <text x="800" y="78" fill="#8b949e" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+    Vision → Reasoning → Translation pipeline with multi-accelerator orchestration
+  </text>
 
-<text x="700" y="50" fill="#ffffff" font-size="32" text-anchor="middle">
-Kazakh Translation Agent Architecture
-</text>
+  <!-- Outer frame -->
+  <rect x="40" y="100" width="1520" height="830" rx="18" fill="none" stroke="#30363d" stroke-width="2"/>
 
-<!-- Cameras -->
-<rect x="50" y="200" width="180" height="80" fill="#1f6feb"/>
-<text x="140" y="245" fill="white" font-size="16" text-anchor="middle">
-Cameras
-</text>
+  <!-- Input Layer -->
+  <rect x="90" y="140" width="1420" height="95" rx="16" fill="#111827" stroke="#30363d"/>
+  <text x="130" y="172" fill="#e6edf3" font-size="22" font-family="Arial, Helvetica, sans-serif">Input Layer</text>
 
-<!-- Vision pipelines -->
-<rect x="300" y="200" width="220" height="80" fill="#238636"/>
-<text x="410" y="245" fill="white" font-size="16" text-anchor="middle">
-Vision Pipelines
-</text>
+  <rect x="130" y="188" width="240" height="32" rx="10" fill="#1f6feb"/>
+  <text x="250" y="209" fill="#ffffff" font-size="15" text-anchor="middle" font-family="Arial, Helvetica, sans-serif">8–12 Cameras / RTSP Streams</text>
 
-<!-- Edge reasoning -->
-<rect x="600" y="200" width="220" height="80" fill="#8957e5"/>
-<text x="710" y="245" fill="white" font-size="16" text-anchor="middle">
-Edge Reasoning
-</text>
+  <rect x="410" y="188" width="180" height="32" rx="10" fill="#1f6feb"/>
+  <text x="500" y="209" fill="#ffffff" font-size="15" text-anchor="middle" font-family="Arial, Helvetica, sans-serif">Sensor Inputs</text>
 
-<!-- Local LLM -->
-<rect x="900" y="200" width="220" height="80" fill="#da3633"/>
-<text x="1010" y="245" fill="white" font-size="16" text-anchor="middle">
-Local LLM
-</text>
+  <rect x="630" y="188" width="180" height="32" rx="10" fill="#1f6feb"/>
+  <text x="720" y="209" fill="#ffffff" font-size="15" text-anchor="middle" font-family="Arial, Helvetica, sans-serif">Text Queries</text>
 
-<!-- Hardware -->
-<rect x="400" y="450" width="600" height="120" fill="#30363d"/>
-<text x="700" y="500" fill="white" font-size="18" text-anchor="middle">
-Jetson + Hailo + Coral
-</text>
-<text x="700" y="530" fill="white" font-size="16" text-anchor="middle">
-GPU / NPU / TPU acceleration
-</text>
+  <rect x="850" y="188" width="250" height="32" rx="10" fill="#1f6feb"/>
+  <text x="975" y="209" fill="#ffffff" font-size="15" text-anchor="middle" font-family="Arial, Helvetica, sans-serif">Offline / Local Data Sources</text>
 
+  <!-- Vision Layer -->
+  <rect x="90" y="270" width="1420" height="135" rx="16" fill="#0f172a" stroke="#30363d"/>
+  <text x="130" y="302" fill="#e6edf3" font-size="22" font-family="Arial, Helvetica, sans-serif">Vision Layer</text>
+
+  <rect x="130" y="330" width="220" height="44" rx="12" fill="#238636"/>
+  <text x="240" y="357" fill="#ffffff" font-size="16" text-anchor="middle" font-family="Arial, Helvetica, sans-serif">Frame Capture</text>
+
+  <rect x="390" y="330" width="220" height="44" rx="12" fill="#238636"/>
+  <text x="500" y="357" fill="#ffffff" font-size="16" text-anchor="middle" font-family="Arial, Helvetica, sans-serif">Preprocessing</text>
+
+  <rect x="650" y="330" width="220" height="44" rx="12" fill="#238636"/>
+  <text x="760" y="357" fill="#ffffff" font-size="16" text-anchor="middle" font-family="Arial, Helvetica, sans-serif">Detection / Tracking</text>
+
+  <rect x="910" y="330" width="220" height="44" rx="12" fill="#238636"/>
+  <text x="1020" y="357" fill="#ffffff" font-size="16" text-anchor="middle" font-family="Arial, Helvetica, sans-serif">Event Extraction</text>
+
+  <rect x="1170" y="330" width="220" height="44" rx="12" fill="#238636"/>
+  <text x="1280" y="357" fill="#ffffff" font-size="16" text-anchor="middle" font-family="Arial, Helvetica, sans-serif">Scene Understanding</text>
+
+  <!-- Reasoning Layer -->
+  <rect x="90" y="440" width="680" height="155" rx="16" fill="#111827" stroke="#30363d"/>
+  <text x="130" y="472" fill="#e6edf3" font-size="22" font-family="Arial, Helvetica, sans-serif">AI Reasoning Layer</text>
+
+  <rect x="130" y="505" width="180" height="44" rx="12" fill="#8957e5"/>
+  <text x="220" y="532" fill="#ffffff" font-size="16" text-anchor="middle" font-family="Arial, Helvetica, sans-serif">Local LLM</text>
+
+  <rect x="340" y="505" width="180" height="44" rx="12" fill="#8957e5"/>
+  <text x="430" y="532" fill="#ffffff" font-size="16" text-anchor="middle" font-family="Arial, Helvetica, sans-serif">Rule Engine</text>
+
+  <rect x="550" y="505" width="180" height="44" rx="12" fill="#8957e5"/>
+  <text x="640" y="532" fill="#ffffff" font-size="16" text-anchor="middle" font-family="Arial, Helvetica, sans-serif">Event Reasoning</text>
+
+  <text x="130" y="575" fill="#8b949e" font-size="15" font-family="Arial, Helvetica, sans-serif">
+    Local interpretation, classification, summaries, operator support
+  </text>
+
+  <!-- Translation Layer -->
+  <rect x="830" y="440" width="680" height="155" rx="16" fill="#111827" stroke="#30363d"/>
+  <text x="870" y="472" fill="#e6edf3" font-size="22" font-family="Arial, Helvetica, sans-serif">Translation Layer</text>
+
+  <rect x="870" y="505" width="170" height="44" rx="12" fill="#da3633"/>
+  <text x="955" y="532" fill="#ffffff" font-size="16" text-anchor="middle" font-family="Arial, Helvetica, sans-serif">Routing Engine</text>
+
+  <rect x="1070" y="505" width="120" height="44" rx="12" fill="#da3633"/>
+  <text x="1130" y="532" fill="#ffffff" font-size="16" text-anchor="middle" font-family="Arial, Helvetica, sans-serif">NLLB-200</text>
+
+  <rect x="1220" y="505" width="120" height="44" rx="12" fill="#da3633"/>
+  <text x="1280" y="532" fill="#ffffff" font-size="16" text-anchor="middle" font-family="Arial, Helvetica, sans-serif">M2M-100</text>
+
+  <rect x="1370" y="505" width="100" height="44" rx="12" fill="#da3633"/>
+  <text x="1420" y="532" fill="#ffffff" font-size="16" text-anchor="middle" font-family="Arial, Helvetica, sans-serif">LoRA</text>
+
+  <text x="870" y="575" fill="#8b949e" font-size="15" font-family="Arial, Helvetica, sans-serif">
+    Pivot routing, multilingual inference, domain adaptation
+  </text>
+
+  <!-- Orchestration Layer -->
+  <rect x="90" y="630" width="1420" height="110" rx="16" fill="#161b22" stroke="#30363d"/>
+  <text x="130" y="662" fill="#e6edf3" font-size="22" font-family="Arial, Helvetica, sans-serif">Inference Orchestration Layer</text>
+
+  <rect x="130" y="690" width="220" height="32" rx="10" fill="#9e6a03"/>
+  <text x="240" y="711" fill="#ffffff" font-size="15" text-anchor="middle" font-family="Arial, Helvetica, sans-serif">Pipeline Coordination</text>
+
+  <rect x="390" y="690" width="220" height="32" rx="10" fill="#9e6a03"/>
+  <text x="500" y="711" fill="#ffffff" font-size="15" text-anchor="middle" font-family="Arial, Helvetica, sans-serif">Resource Allocation</text>
+
+  <rect x="650" y="690" width="220" height="32" rx="10" fill="#9e6a03"/>
+  <text x="760" y="711" fill="#ffffff" font-size="15" text-anchor="middle" font-family="Arial, Helvetica, sans-serif">Latency Control</text>
+
+  <rect x="910" y="690" width="220" height="32" rx="10" fill="#9e6a03"/>
+  <text x="1020" y="711" fill="#ffffff" font-size="15" text-anchor="middle" font-family="Arial, Helvetica, sans-serif">Failure Recovery</text>
+
+  <rect x="1170" y="690" width="220" height="32" rx="10" fill="#9e6a03"/>
+  <text x="1280" y="711" fill="#ffffff" font-size="15" text-anchor="middle" font-family="Arial, Helvetica, sans-serif">Scheduling</text>
+
+  <!-- Acceleration / Storage / Deployment -->
+  <rect x="90" y="775" width="450" height="115" rx="16" fill="#0f172a" stroke="#30363d"/>
+  <text x="130" y="807" fill="#e6edf3" font-size="22" font-family="Arial, Helvetica, sans-serif">Acceleration Layer</text>
+  <text x="130" y="842" fill="#58a6ff" font-size="18" font-family="Arial, Helvetica, sans-serif">Jetson GPU</text>
+  <text x="270" y="842" fill="#58a6ff" font-size="18" font-family="Arial, Helvetica, sans-serif">Hailo NPU</text>
+  <text x="410" y="842" fill="#58a6ff" font-size="18" font-family="Arial, Helvetica, sans-serif">Coral TPU</text>
+
+  <rect x="575" y="775" width="450" height="115" rx="16" fill="#0f172a" stroke="#30363d"/>
+  <text x="615" y="807" fill="#e6edf3" font-size="22" font-family="Arial, Helvetica, sans-serif">Storage Layer</text>
+  <text x="615" y="842" fill="#8b949e" font-size="18" font-family="Arial, Helvetica, sans-serif">NVMe datasets</text>
+  <text x="780" y="842" fill="#8b949e" font-size="18" font-family="Arial, Helvetica, sans-serif">model cache</text>
+  <text x="910" y="842" fill="#8b949e" font-size="18" font-family="Arial, Helvetica, sans-serif">embeddings</text>
+
+  <rect x="1060" y="775" width="450" height="115" rx="16" fill="#0f172a" stroke="#30363d"/>
+  <text x="1100" y="807" fill="#e6edf3" font-size="22" font-family="Arial, Helvetica, sans-serif">Deployment Layer</text>
+  <text x="1100" y="842" fill="#8b949e" font-size="18" font-family="Arial, Helvetica, sans-serif">edge nodes</text>
+  <text x="1235" y="842" fill="#8b949e" font-size="18" font-family="Arial, Helvetica, sans-serif">offline cluster</text>
+  <text x="1390" y="842" fill="#8b949e" font-size="18" font-family="Arial, Helvetica, sans-serif">sovereign infra</text>
+
+  <!-- Arrows -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#8b949e"/>
+    </marker>
+  </defs>
+
+  <!-- Input to Vision -->
+  <line x1="800" y1="235" x2="800" y2="270" stroke="#8b949e" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- Vision to Reasoning -->
+  <line x1="620" y1="405" x2="430" y2="440" stroke="#8b949e" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- Vision to Translation -->
+  <line x1="980" y1="405" x2="1170" y2="440" stroke="#8b949e" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- Reasoning to Translation -->
+  <line x1="770" y1="517" x2="830" y2="517" stroke="#8b949e" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- Reasoning+Translation to Orchestration -->
+  <line x1="430" y1="595" x2="430" y2="630" stroke="#8b949e" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="1170" y1="595" x2="1170" y2="630" stroke="#8b949e" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- Orchestration to lower layers -->
+  <line x1="315" y1="740" x2="315" y2="775" stroke="#8b949e" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="800" y1="740" x2="800" y2="775" stroke="#8b949e" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="1285" y1="740" x2="1285" y2="775" stroke="#8b949e" stroke-width="3" marker-end="url(#arrow)"/>
 </svg>
