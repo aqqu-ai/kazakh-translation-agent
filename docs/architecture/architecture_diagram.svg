@@ -104,11 +104,10 @@
   <text x="1280" y="711" fill="#ffffff" font-size="15" text-anchor="middle" font-family="Arial, Helvetica, sans-serif">Scheduling</text>
 
   <!-- Acceleration / Storage / Deployment -->
-  <rect x="90" y="775" width="450" height="115" rx="16" fill="#0f172a" stroke="#30363d"/>
-  <text x="130" y="807" fill="#e6edf3" font-size="22" font-family="Arial, Helvetica, sans-serif">Acceleration Layer</text>
-  <text x="130" y="842" fill="#58a6ff" font-size="18" font-family="Arial, Helvetica, sans-serif">Jetson GPU</text>
-  <text x="270" y="842" fill="#58a6ff" font-size="18" font-family="Arial, Helvetica, sans-serif">Hailo NPU</text>
-  <text x="410" y="842" fill="#58a6ff" font-size="18" font-family="Arial, Helvetica, sans-serif">Coral TPU</text>
+<rect x="90" y="775" width="450" height="115" rx="16" fill="#0f172a" stroke="#30363d"/>
+<text x="130" y="807" fill="#e6edf3" font-size="22" font-family="Arial, Helvetica, sans-serif">Acceleration Layer</text>
+<text x="130" y="842" fill="#58a6ff" font-size="18" font-family="Arial, Helvetica, sans-serif">Heterogeneous AI acceleration</text>
+<text x="130" y="870" fill="#8b949e" font-size="18" font-family="Arial, Helvetica, sans-serif">CPU • GPU • NPU • TPU</text>
 
   <rect x="575" y="775" width="450" height="115" rx="16" fill="#0f172a" stroke="#30363d"/>
   <text x="615" y="807" fill="#e6edf3" font-size="22" font-family="Arial, Helvetica, sans-serif">Storage Layer</text>
