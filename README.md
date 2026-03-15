@@ -26,6 +26,8 @@ The system is designed to operate across distributed environments including edge
 
 ## Architecture
 
+![Architecture](docs/architecture/architecture_diagram.svg)
+
 The translation system consists of four core modules.
 
 Input Processing  
