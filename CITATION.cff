@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+title: Kazakh Translation Agent
+message: If you use this software, please cite it as below.
+authors:
+  - family-names: Pavlenko
+    given-names: Alexandr
+affiliation: AISC Technologies Ltd
+repository-code: https://github.com/aqqu-ai/kazakh-translation-agent
+license: Apache-2.0
