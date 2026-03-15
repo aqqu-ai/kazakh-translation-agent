@@ -1,19 +1,29 @@
 # Models
 
-Translation backbones supported by the Kazakh Translation Agent.
+## Sovereign Edge AI Node
 
-Primary multilingual models:
+Production-ready edge AI platform for real-world operations.
 
-NLLB-200  
-M2M-100
+### Core capabilities
 
-Adapter layer:
+- 8–12 cameras
+- vision pipelines
+- local LLM
+- event reasoning
+- site AI
 
-LoRA domain adapters  
-Pivot routing confidence layer
+### Translation backbones
 
-Acceleration targets:
+- NLLB-200
+- M2M-100
 
-GPU
-NPU
-TPU
+### Adapter layer
+
+- LoRA domain adapters
+- pivot routing confidence layer
+
+### Deployment profile
+
+- sovereign edge AI node
+- offline-first operation
+- real-world production scenarios
