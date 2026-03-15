@@ -26,9 +26,7 @@ The system is designed to operate across distributed environments including edge
 
 ## Architecture
 
-![Architecture](docs/architecture/architecture_diagram.svg)
-
-Edge AI architecture combining vision pipelines, reasoning, and multilingual translation running on a sovereign edge AI node (Jetson + Hailo + Coral).
+![Kazakh Translation Agent Architecture](docs/architecture/architecture_diagram.svg)
 
 The translation system consists of four core modules.
 
