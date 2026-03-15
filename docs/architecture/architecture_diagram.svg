@@ -1,4 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
-<rect width="1600" height="900" fill="#0b0f14"/>
-<text x="80" y="120" fill="#e6edf3" font-size="44">Kazakh Translation Agent Architecture</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="800">
+
+<rect x="0" y="0" width="1400" height="800" fill="#0b0f14"/>
+
+<text x="700" y="50" fill="#ffffff" font-size="32" text-anchor="middle">
+Kazakh Translation Agent Architecture
+</text>
+
+<!-- Cameras -->
+<rect x="50" y="200" width="180" height="80" fill="#1f6feb"/>
+<text x="140" y="245" fill="white" font-size="16" text-anchor="middle">
+Cameras
+</text>
+
+<!-- Vision pipelines -->
+<rect x="300" y="200" width="220" height="80" fill="#238636"/>
+<text x="410" y="245" fill="white" font-size="16" text-anchor="middle">
+Vision Pipelines
+</text>
+
+<!-- Edge reasoning -->
+<rect x="600" y="200" width="220" height="80" fill="#8957e5"/>
+<text x="710" y="245" fill="white" font-size="16" text-anchor="middle">
+Edge Reasoning
+</text>
+
+<!-- Local LLM -->
+<rect x="900" y="200" width="220" height="80" fill="#da3633"/>
+<text x="1010" y="245" fill="white" font-size="16" text-anchor="middle">
+Local LLM
+</text>
+
+<!-- Hardware -->
+<rect x="400" y="450" width="600" height="120" fill="#30363d"/>
+<text x="700" y="500" fill="white" font-size="18" text-anchor="middle">
+Jetson + Hailo + Coral
+</text>
+<text x="700" y="530" fill="white" font-size="16" text-anchor="middle">
+GPU / NPU / TPU acceleration
+</text>
+
 </svg>
